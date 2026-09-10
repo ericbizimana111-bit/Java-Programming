@@ -364,6 +364,9 @@ public class HelloWorld {
 
 }    */
 
+
+    
+
 import java.util.Scanner;
 
 public class HelloWorld {
@@ -384,20 +387,21 @@ public class HelloWorld {
         String operation = scanner.nextLine();
 
       
-        switch (operation) {
-            case "sum":
-                System.out.printf("%f + %f = %f ", number1 , number2 , number1 + number2);
-                break;
-            
+        // switch (operation) {
+        //     case "sum":
+        //         System.out.printf("%f + %f = %f ", number1 , number2 , number1 + number2);
+        //         break;
+        //     case "div":
+        //         if (number2 == 0) {
+        //             System.out.print("Division by zero is not possible");
+        //         }
+        //         System.out.printf("%f / %f = %f ", number1 , number2 , number1 / number2);
+        //         break;
         
-            default:
-                System.out.println("operation is invalid");
-                break;
-        }
-
-
-
-
+        //     default:
+        //         System.out.println("operation is invalid");
+        //         break;
+        // }
 
 
 
