@@ -374,9 +374,15 @@ public class HelloWorld {
 
         System.out.printf("Input the first number:");
         double number1 = scanner.nextDouble();
+        scanner.nextLine()
 
         System.out.printf(("Input the second number:"));
         double number2 = scanner.nextDouble();
+        scanner.nextLine();
+
+        System.out.print("What operation do you want to perform? ");
+        String operation = scanner.nextLine();
+
 
         // System.out.println(number1);
         // System.out.println(number2);
