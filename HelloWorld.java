@@ -383,6 +383,27 @@ public class HelloWorld {
         System.out.print("What operation do you want to perform? ");
         String operation = scanner.nextLine();
 
+      
+        switch (operation) {
+            case "sum":
+
+            System.out.print("%f + %f = %f ", number1 , number);
+                
+                break;
+        
+            default:
+                System.out.println();
+                break;
+        }
+
+
+
+
+
+
+
+
+        /* 
         if (operation.equals("sum")) {
 
             System.out.printf("%f + %f = %f ", number1, number2, number1 + number2);
@@ -406,7 +427,7 @@ public class HelloWorld {
                 System.out.printf("%f / %f = %f ", number1 , number2 , number1 / number2);
             }
 
-        }
+        } */
 
         // System.out.println(number1);
         // System.out.println(number2);
