@@ -364,78 +364,94 @@ public class HelloWorld {
 
 }    */
 
+// import java.util.Scanner;
 
-    
+// public class HelloWorld {
 
-import java.util.Scanner;
+//     public static void main(String[] args) {
 
+//         Scanner scanner = new Scanner(System.in);
+
+//         System.out.printf("Input the first number:");
+//         double number1 = scanner.nextDouble();
+//         scanner.nextLine();
+
+//         System.out.printf(("Input the second number:"));
+//         double number2 = scanner.nextDouble();
+//         scanner.nextLine();
+
+//         System.out.print("What operation do you want to perform? ");
+//         String operation = scanner.nextLine();
+
+//         // switch (operation) {
+//         //     case "sum":
+//         //         System.out.printf("%f + %f = %f ", number1 , number2 , number1 + number2);
+//         //         break;
+//         //     case "div":
+//         //         if (number2 == 0) {
+//         //             System.out.print("Division by zero is not possible");
+//         //         }
+//         //         System.out.printf("%f / %f = %f ", number1 , number2 , number1 / number2);
+//         //         break;
+
+//         //     default:
+//         //         System.out.println("operation is invalid");
+//         //         break;
+//         // }
+
+//         /* 
+//         if (operation.equals("sum")) {
+
+//             System.out.printf("%f + %f = %f ", number1, number2, number1 + number2);
+
+//         } else if (operation.equals("sub")) {
+
+//             System.out.printf("%f - %f = %f ", number1, number2, number1 - number2);
+
+//         } else if (operation.equals("mul")) {
+
+//             System.out.printf("%f * %f = %f ", number1, number2, number1 * number2);
+
+//         }else if (operation.equals("div")){
+
+//             if (number2 == 0) {
+
+//                 System.out.println("Cannot divide by 0");
+
+//             }else {
+
+//                 System.out.printf("%f / %f = %f ", number1 , number2 , number1 / number2);
+//             }
+
+//         } */
+
+//         // System.out.println(number1);
+//         // System.out.println(number2);
+
+//         scanner.close();
+
+//     }
+// }
+
+
+import  java.util.Arrays;
 public class HelloWorld {
 
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        char vowels[] = new char[5];
+        // creates a character array called vowel that can store 5 characters
+        // Create an array named vowels that can hold 5 char values.
+        // char is a java data type used to store one character
+        // new char[5] creates a new character array with space for 5 characters
+        // char[] vowels = {'a','b','c'}
 
-        System.out.printf("Input the first number:");
-        double number1 = scanner.nextDouble();
-        scanner.nextLine();
+        vowels[0] = 'a';
+        vowels[1] = 'e';
+        vowels[2] = 'i';
+        vowels[3] = 'o';
+        vowels[4] = 'u';
 
-        System.out.printf(("Input the second number:"));
-        double number2 = scanner.nextDouble();
-        scanner.nextLine();
-
-        System.out.print("What operation do you want to perform? ");
-        String operation = scanner.nextLine();
-
-      
-        // switch (operation) {
-        //     case "sum":
-        //         System.out.printf("%f + %f = %f ", number1 , number2 , number1 + number2);
-        //         break;
-        //     case "div":
-        //         if (number2 == 0) {
-        //             System.out.print("Division by zero is not possible");
-        //         }
-        //         System.out.printf("%f / %f = %f ", number1 , number2 , number1 / number2);
-        //         break;
-        
-        //     default:
-        //         System.out.println("operation is invalid");
-        //         break;
-        // }
-
-
-
-
-        /* 
-        if (operation.equals("sum")) {
-
-            System.out.printf("%f + %f = %f ", number1, number2, number1 + number2);
-
-        } else if (operation.equals("sub")) {
-
-            System.out.printf("%f - %f = %f ", number1, number2, number1 - number2);
-
-        } else if (operation.equals("mul")) {
-
-            System.out.printf("%f * %f = %f ", number1, number2, number1 * number2);
-
-        }else if (operation.equals("div")){
-
-            if (number2 == 0) {
-
-                System.out.println("Cannot divide by 0");
-
-            }else {
-
-                System.out.printf("%f / %f = %f ", number1 , number2 , number1 / number2);
-            }
-
-        } */
-
-        // System.out.println(number1);
-        // System.out.println(number2);
-
-        scanner.close();
-
+        System.out.println(Arrays.toString(vowels));
     }
 }
