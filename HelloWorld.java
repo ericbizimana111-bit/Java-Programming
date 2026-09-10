@@ -386,13 +386,12 @@ public class HelloWorld {
       
         switch (operation) {
             case "sum":
-
-            System.out.print("%f + %f = %f ", number1 , number);
-                
+                System.out.printf("%f + %f = %f ", number1 , number2 , number1 + number2);
                 break;
+            
         
             default:
-                System.out.println();
+                System.out.println("operation is invalid");
                 break;
         }
 
