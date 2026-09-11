@@ -540,7 +540,15 @@ public class HelloWorld {
 
 
 
-        int number
+        int number = 5;
+        int multiplier = 1;
+
+        while ( multiplier <= 10 ) {
+
+            System.out.printf("%d * %d = %d \n", number , multiplier , number * multiplier);
+            multiplier++;
+            
+        }
 
     }
 
