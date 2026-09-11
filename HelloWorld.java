@@ -525,17 +525,22 @@ public class HelloWorld {
         // }
         // }
 
-        int[] numbers = { 1, 2, 3, 4, 5 };
+        // int[] numbers = { 1, 2, 3, 4, 5 };
 
-        int sum = 0;
+        // int sum = 0;
 
-        for (int number : numbers) { // This means for every integer number in the numbers arrays be stored into the
-                                     // number variable
-            sum += number;
+        // for (int number : numbers) { // This means for every integer number in the numbers arrays be stored into the
+        //                              // number variable
+        //     sum += number;
 
-            // System.out.println(number); // then print that number
-        }
-        System.out.println(sum);
+        //     // System.out.println(number); // then print that number
+        // }
+        // System.out.println(sum);
+
+
+
+
+        int number
 
     }
 
