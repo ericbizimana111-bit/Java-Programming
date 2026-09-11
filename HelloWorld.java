@@ -434,24 +434,40 @@ public class HelloWorld {
 // }
 
 
-import  java.util.Arrays;
+
+
+
+
+
+
+
+import java.util.Arrays;
 public class HelloWorld {
 
     public static void main(String[] args) {
 
-        char vowels[] = new char[5];
-        // creates a character array called vowel that can store 5 characters
-        // Create an array named vowels that can hold 5 char values.
-        // char is a java data type used to store one character
-        // new char[5] creates a new character array with space for 5 characters
-        // char[] vowels = {'a','b','c'}
+        // char vowels[] = new char[5];
+        // // creates a character array called vowel that can store 5 characters
+        // // Create an array named vowels that can hold 5 char values.
+        // // char is a java data type used to store one character
+        // // new char[5] creates a new character array with space for 5 characters
+        // // char[] vowels = {'a','b','c'}
 
-        vowels[0] = 'a';
-        vowels[1] = 'e';
-        vowels[2] = 'i';
-        vowels[3] = 'o';
-        vowels[4] = 'u';
+        // vowels[0] = 'a';
+        // vowels[1] = 'e';
+        // vowels[2] = 'i';
+        // vowels[3] = 'o';
+        // vowels[4] = 'u';
 
+        char vowels[] = { 'a', 'e', 'i', 'o', 'u' };
+
+        // vowels[2] = 'x'; //vowels[9] = 'v'; it says you are going out of the bounds for length 5
+        // vowels[1] = 'b';
+
+        
+         
+        System.out.println(Arrays.sort(vowels));
         System.out.println(Arrays.toString(vowels));
+
     }
 }
