@@ -433,15 +433,8 @@ public class HelloWorld {
 //     }
 // }
 
-
-
-
-
-
-
-
-
 import java.util.Arrays;
+
 public class HelloWorld {
 
     public static void main(String[] args) {
@@ -459,15 +452,51 @@ public class HelloWorld {
         // vowels[3] = 'o';
         // vowels[4] = 'u';
 
-        char vowels[] = { 'a', 'e', 'i', 'o', 'u' };
 
-        // vowels[2] = 'x'; //vowels[9] = 'v'; it says you are going out of the bounds for length 5
+
+
+        //char vowels[] = { 'a', 'e', 'i', 'o', 'u' }; //charctera rrays 
+
+
+
+        // char[] vowels = { 'a', 'e', 'i', 'o', 'u' }; //more common java style
+
+        // Arrays.sort(vowels);
+        // int startingIndex  = 1; //where to start on filling
+        // int endingIndex = 4; //this one is not included to be filled 
+        
+        // //START included, END excluded for the methods like this in java 
+        // Arrays.fill(vowels, startingIndex , endingIndex, 'x');  // Arrays.fill(array, fromIndex, toIndex, value);
+        // System.out.println(Arrays.toString(vowels));
+
+
+
+
+        // Arrays.sort(vowels); //sorts the character in ascending order
+
+        // char key = 'o';        //if key is not there -1 is give meaning that it  is not found            //the key of what i am finding index for  
+        // int foundItemIndex =  Arrays.binarySearch(vowels, key); //this means find the key in the vowels arrasy and give me it's index
+        //when usign binary search it is better to use the arrays.sort because it firs sort them like the letter it compare theri unicode values
+
+        // System.out.println(vowels); //aeiou
+        // System.out.println(Arrays.toString(vowels)); // That [a, e, i, o, u] is the string representation of the array produced by Arrays.toString().
+        // System.out.println(foundItemIndex);
+
+
+        // vowels[2] = 'x'; //vowels[9] = 'v'; it says you are going out of the bounds
+        // for length 5
         // vowels[1] = 'b';
 
-        
-         
-        System.out.println(Arrays.sort(vowels));
-        System.out.println(Arrays.toString(vowels));
+
+       int numbers[] = {1,2,3,4,5};
+
+       int copyOfNumbers[]
+
+
+
+
+
+     
 
     }
 }
