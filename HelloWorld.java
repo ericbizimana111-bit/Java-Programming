@@ -433,7 +433,7 @@ public class HelloWorld {
 //     }
 // }
 
-import java.util.Arrays;
+// import java.util.Arrays;
 
 public class HelloWorld {
 
@@ -452,54 +452,91 @@ public class HelloWorld {
         // vowels[3] = 'o';
         // vowels[4] = 'u';
 
-
-
-
-        //char vowels[] = { 'a', 'e', 'i', 'o', 'u' }; //charctera rrays 
-
-
+        // char vowels[] = { 'a', 'e', 'i', 'o', 'u' }; //charctera rrays
 
         // char[] vowels = { 'a', 'e', 'i', 'o', 'u' }; //more common java style
 
         // Arrays.sort(vowels);
-        // int startingIndex  = 1; //where to start on filling
-        // int endingIndex = 4; //this one is not included to be filled 
-        
-        // //START included, END excluded for the methods like this in java 
-        // Arrays.fill(vowels, startingIndex , endingIndex, 'x');  // Arrays.fill(array, fromIndex, toIndex, value);
+        // int startingIndex = 1; //where to start on filling
+        // int endingIndex = 4; //this one is not included to be filled
+
+        // //START included, END excluded for the methods like this in java
+        // Arrays.fill(vowels, startingIndex , endingIndex, 'x'); // Arrays.fill(array,
+        // fromIndex, toIndex, value);
         // System.out.println(Arrays.toString(vowels));
-
-
-
 
         // Arrays.sort(vowels); //sorts the character in ascending order
 
-        // char key = 'o';        //if key is not there -1 is give meaning that it  is not found            //the key of what i am finding index for  
-        // int foundItemIndex =  Arrays.binarySearch(vowels, key); //this means find the key in the vowels arrasy and give me it's index
-        //when usign binary search it is better to use the arrays.sort because it firs sort them like the letter it compare theri unicode values
+        // char key = 'o'; //if key is not there -1 is give meaning that it is not found
+        // //the key of what i am finding index for
+        // int foundItemIndex = Arrays.binarySearch(vowels, key); //this means find the
+        // key in the vowels arrasy and give me it's index
+        // when usign binary search it is better to use the arrays.sort because it firs
+        // sort them like the letter it compare theri unicode values
 
         // System.out.println(vowels); //aeiou
-        // System.out.println(Arrays.toString(vowels)); // That [a, e, i, o, u] is the string representation of the array produced by Arrays.toString().
+        // System.out.println(Arrays.toString(vowels)); // That [a, e, i, o, u] is the
+        // string representation of the array produced by Arrays.toString().
         // System.out.println(foundItemIndex);
-
 
         // vowels[2] = 'x'; //vowels[9] = 'v'; it says you are going out of the bounds
         // for length 5
         // vowels[1] = 'b';
 
+        // int numbers[] = {1,2,3,4,5};
 
-       int numbers[] = {1,2,3,4,5};
+        // int copyOfNumbers[] = Arrays.copyOf(numbers, 2);
+        // //means create a new int array containing the first 2 elements of the numbers
+        // array
 
-       int copyOfNumbers[] = Arrays.copyOf(numbers, 2);
-       //means create a new int array containing the first 2 elements of the numbers array
+        // System.out.println(Arrays.toString(copyOfNumbers));
 
-       System.out.println(Arrays.toString(copyOfNumbers));
+        // int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
+        // int sum = 0;
 
+        // for (int index = 0; index < numbers.length; index++) {
 
+        // sum = sum + numbers[index];
+        // // System.out.println(numbers[index]);
+        // System.out.println(sum);
+        // }
 
+        // int multiplier = 5;
+        // for (int i = 1; i <= 10; i++) {
 
-     
+        // System.out.printf("%d * %d = %d \n",
+        // multiplier, i, i * multiplier);
+
+        // }
+
+        // for (int i = 1; i <= 10; i++) { //ROW
+        // for (int j = 1; j <= 10; j++) { //COLUMN
+        // System.out.printf("%d * %d = %d \n", i, j, i * j);
+        // }
+        // System.out.println();
+        // }
+
+        // : this one is called the colon
+
+        // for (int i = 1; i <= 50; i++) {
+        // if (i % 2 == 1) {
+        // System.out.println(i);
+        // }
+        // }
+
+        int[] numbers = { 1, 2, 3, 4, 5 };
+
+        int sum = 0;
+
+        for (int number : numbers) { // This means for every integer number in the numbers arrays be stored into the
+                                     // number variable
+            sum += number;
+
+            // System.out.println(number); // then print that number
+        }
+        System.out.println(sum);
 
     }
+
 }
