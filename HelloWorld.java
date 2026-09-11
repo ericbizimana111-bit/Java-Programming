@@ -490,7 +490,10 @@ public class HelloWorld {
 
        int numbers[] = {1,2,3,4,5};
 
-       int copyOfNumbers[]
+       int copyOfNumbers[] = Arrays.copyOf(numbers, 2);
+       //means create a new int array containing the first 2 elements of the numbers array
+
+       System.out.println(Arrays.toString(copyOfNumbers));
 
 
 
