@@ -577,9 +577,13 @@ public class HelloWorld {
         numbers.add(4);// index 3
         numbers.add(5);// index 4
 
-        numbers.clear();
+
+        numbers.set(1, 6); //This one is used within an ArrayList to replace/change a value at a specific index
+        System.out.println(numbers.get(1));
         System.out.println(numbers.toString());
 
+
+        // numbers.clear(); //this removes all the elments from the array list
         // numbers.remove(Integer.valueOf(1));
         // //this one removes the value 1
 
