@@ -435,6 +435,11 @@ public class HelloWorld {
 
 // import java.util.Arrays;
 
+// import java.lang.reflect.Array;
+// import java.util.ArrayList;
+import java.util.ArrayList;
+// import java.util.Arrays;;
+
 public class HelloWorld {
 
     public static void main(String[] args) {
@@ -529,26 +534,51 @@ public class HelloWorld {
 
         // int sum = 0;
 
-        // for (int number : numbers) { // This means for every integer number in the numbers arrays be stored into the
-        //                              // number variable
-        //     sum += number;
+        // for (int number : numbers) { // This means for every integer number in the
+        // numbers arrays be stored into the
+        // // number variable
+        // sum += number;
 
-        //     // System.out.println(number); // then print that number
+        // // System.out.println(number); // then print that number
         // }
         // System.out.println(sum);
 
+        // int number = 5;
+        // int multiplier = 1;
 
+        // do {
 
+        // System.out.printf("%d * %d = %d \n", number , multiplier , number *
+        // multiplier);
+        // multiplier++;
 
-        int number = 5;
-        int multiplier = 1;
+        // }while(multiplier <= 10);
 
-        while ( multiplier <= 10 ) {
+        // while ( multiplier <= 10 ) {
 
-            System.out.printf("%d * %d = %d \n", number , multiplier , number * multiplier);
-            multiplier++;
-            
-        }
+        // System.out.printf("%d * %d = %d \n", number , multiplier , number *
+        // multiplier);
+        // multiplier++;
+
+        // }
+
+        ArrayList<Integer> numbers = new ArrayList<Integer>();
+        // means create an empyt list that can store the integer
+        // ArrayList is a java collection that stores multiple values think of it like
+        // the flexible array unlike the normal array int[] numbers = new int[5];
+        // an arraylist can grow and shrink as you add or remove elements respectively
+        // Integer this tell the arraylist that it will store integer values
+        // I want a varible called numbers that refers to an ArrayList of integers
+        // new ArrayList<Integer>(); this actually creates the arrayList in the memory
+
+        numbers.add(1);// index 1
+        numbers.add(2);// index 2
+        numbers.add(3);// index 3
+        numbers.add(4);// index 4
+        numbers.add(5);// index 5
+
+        System.out.println(numbers.get(1)); //This helps to get the specific number at the specified index;
+        System.out.println(numbers.get(2));
 
     }
 
