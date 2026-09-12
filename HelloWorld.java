@@ -577,14 +577,18 @@ public class HelloWorld {
         numbers.add(4);// index 3
         numbers.add(5);// index 4
 
-        numbers.remove(Integer.valueOf(1));
-        // //this one removes the value 1 
-        
+        numbers.clear();
+        System.out.println(numbers.toString());
+
+        // numbers.remove(Integer.valueOf(1));
+        // //this one removes the value 1
+
         // numbers.remove(1);
         // Because 1 is an int, Java interprets this as:Remove the element at index 1
         // and then the indexes shift bcs here 3 as the valued added will be
 
-        System.out.println(numbers.get(0)); // This helps to get the specific number at the specified index;
+        // System.out.println(numbers.get(0)); // This helps to get the specific number
+        // at the specified index;
         // System.out.println(numbers.get(2));
 
     }
