@@ -732,9 +732,8 @@ public class HelloWorld {
         System.out.printf("%s was born in %s and he is %d years old\n", User.getName(), User.getBirthDay().toString(),
                 User.age());
 
-        Book book = new Book();
-        book.title = "carmilla";
-        book.author = "King Of The Jungle";
+        Book book = new Book("carmilla","king fo the jungle");
+     
         User.borrow(book);
         System.out.printf("%s has borrowed these books: %s\n", User.getName(), User.books.toString());
 
