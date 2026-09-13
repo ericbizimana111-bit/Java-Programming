@@ -729,7 +729,8 @@ public class HelloWorld {
         User User = new User("Bizimana Eric", "1995-01-31"); // creation of the object using the user class
         // here when new User() happenss teh constructor runs automatically , it is used
         // to give the object it's starting values
-        System.out.printf("%s was born in %s and he is %d years old\n", User.getName(), User.getBirthDay().toString(),User.age());
+        System.out.printf("%s was born in %s and he is %d years old\n", User.getName(), User.getBirthDay().toString(),
+                User.age());
 
         Book book = new Book();
         book.title = "carmilla";
@@ -737,15 +738,37 @@ public class HelloWorld {
         User.borrow(book);
         System.out.printf("%s has borrowed these books: %s\n", User.getName(), User.books.toString());
 
+        // // User oldUser = new User();
 
+        // // oldUser.name = "kim jung un";
+        // // oldUser.birthDay = LocalDate.parse("1980-07-08");
 
+        // // System.out.printf("%s was born in %s and he is %d\n", oldUser.name,
+        // oldUser.birthDay, oldUser.age());
 
+        // A getter is a method used to get/read the value of a private variable.
 
-        // User oldUser = new User();
+        // Example:
 
-        // oldUser.name = "kim jung un";
-        // oldUser.birthDay = LocalDate.parse("1980-07-08");
+        // class User {
+        // private String name;
 
-        // System.out.printf("%s was born in %s and he is %d\n", oldUser.name, oldUser.birthDay, oldUser.age());
+        // public String getName() {
+        // return name;
+        // }
+        // }
+
+        // Then:
+
+        // User user = new User();
+
+        // Private hides the data
+        // Getter gets or enables you to read the private data
+        // Setter helps you to set the cahges to the private value
+
+        // public void setName(){
+        // this.name = name;
+        // }
     }
+
 }
