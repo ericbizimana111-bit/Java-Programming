@@ -672,7 +672,7 @@ public class HelloWorld {
 
     }
 }
-*/
+
 import java.time.LocalDate; //LocalDate is also a java collection for date 
 
 public class HelloWorld {
@@ -688,7 +688,7 @@ public class HelloWorld {
                 youngUser.age());
 
         Book book = new Book();
-        
+
         // Book blueprint
         // ↓
         // new Book()
@@ -702,9 +702,9 @@ public class HelloWorld {
 
         System.out.printf("%s has borrowed these books: %s\n", youngUser.name, youngUser.books.toString());
 
-        User oldUser = new User();
+        User oldUser = new User(); works without the constructor 
 
-        oldUser.name = "kim kong un";
+        oldUser.name = "kim jung un";
         oldUser.birthDay = LocalDate.parse("1980-07-08");
 
         System.out.printf("%s was born in %s and he is %d\n", oldUser.name, oldUser.birthDay, oldUser.age());
@@ -717,4 +717,35 @@ public class HelloWorld {
     // constructor
     // and it is reponsible for initializing all the propertis with their default
     // values
+}  */
+
+import java.time.LocalDate; //LocalDate is also a java collection for date 
+
+// a constructor prepare the new object when it is created
+public class HelloWorld {
+
+    public static void main(String[] args) {
+
+        User User = new User("Bizimana Eric", "1995-01-31"); // creation of the object using the user class
+        // here when new User() happenss teh constructor runs automatically , it is used
+        // to give the object it's starting values
+        System.out.printf("%s was born in %s and he is %d years old\n", User.name, User.birthDay.toString(),User.age());
+
+        Book book = new Book();
+        book.title = "carmilla";
+        book.author = "King Of The Jungle";
+        User.borrow(book);
+        System.out.printf("%s has borrowed these books: %s\n", User.name, User.books.toString());
+
+
+
+
+
+        // User oldUser = new User();
+
+        // oldUser.name = "kim jung un";
+        // oldUser.birthDay = LocalDate.parse("1980-07-08");
+
+        // System.out.printf("%s was born in %s and he is %d\n", oldUser.name, oldUser.birthDay, oldUser.age());
+    }
 }

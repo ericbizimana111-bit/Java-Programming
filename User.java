@@ -4,9 +4,12 @@ import java.util.ArrayList;
 
 public class User {
 
-    public String name;
-    public LocalDate birthDay;
+    // private : means only this class can access it directly
+    private String name;
+    private LocalDate birthDay;
     public ArrayList<Book> books = new ArrayList<Book>();
+    // public String name;
+    // public LocalDate birthDay;
     // this is hte ArrayList of type book with the name book and new ArrayList<book>
     // creates the memeory of the books
     // Since these variablea are declared on the class level they will be
@@ -19,10 +22,39 @@ public class User {
 
     // }
 
+    // the constructor in java a constrictor is aspecial metod that runs
+    // automatically when you create an object think of it like the setup of the
+    // obejct for example
+
+    // public class User(){
+    // String name;
+    // String school;
+
+    // User( String name, String school){
+
+    // this.name = name;
+    // this.age = school;
+
+    // }
+
+    // }
+
+    // ========================= constructor ==================================== //
+
+    // Class= blueprint
+    // Object = thing created from blueprint
+    // Constructor = setup instructions when the thing is created.
+
+    User(String name, String birthDay) {
+        this.name = name;
+        this.birthDay = LocalDate.parse(birthDay);
+    }// here wea are aking usr for hte name and storing that name in teh name
+     // variable or in the name property
+
     public void borrow(Book book) {
-        // This is a method named borrow that takes one parameter: 
-        // book. The method is public, which means it can be 
-        // accessed from outside the class. The return type is void, 
+        // This is a method named borrow that takes one parameter:
+        // book. The method is public, which means it can be
+        // accessed from outside the class. The return type is void,
         // which means this method doesn't return any value.
         this.books.add(book);
         // This line adds the book object to a collection called books.
