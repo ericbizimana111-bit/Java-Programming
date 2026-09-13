@@ -433,12 +433,14 @@ public class HelloWorld {
 //     }
 // }
 
+/*
 // import java.util.Arrays;
 
 // import java.lang.reflect.Array;
 // import java.util.ArrayList;
-import java.util.ArrayList;
+// import java.util.ArrayList;
 // import java.util.Arrays;;
+//import java.util.Comparator;;
 
 public class HelloWorld {
 
@@ -562,7 +564,7 @@ public class HelloWorld {
 
         // }
 
-        ArrayList<Integer> numbers = new ArrayList<Integer>();
+        // ArrayList<Integer> numbers = new ArrayList<Integer>();
         // means create an empyt list that can store the integer
         // ArrayList is a java collection that stores multiple values think of it like
         // the flexible array unlike the normal array int[] numbers = new int[5];
@@ -571,17 +573,43 @@ public class HelloWorld {
         // I want a varible called numbers that refers to an ArrayList of integers
         // new ArrayList<Integer>(); this actually creates the arrayList in the memory
 
-        numbers.add(1);// index 0
-        numbers.add(2);// index 1
-        numbers.add(3);// index 2
-        numbers.add(4);// index 3
-        numbers.add(5);// index 4
+        // numbers.add(1);// index 0
+        // numbers.add(3);// index 1
+        // numbers.add(2);// index 2
+        // numbers.add(4);// index 3
+        // numbers.add(5);// index 4
 
+        // System.out.println("before" + numbers.toString());
 
-        numbers.set(1, 6); //This one is used within an ArrayList to replace/change a value at a specific index
-        System.out.println(numbers.get(1));
-        System.out.println(numbers.toString());
+        // numbers.forEach(number -> {
+        //     // System.out.println(number * 2);
+        //     numbers.set(numbers.indexOf(number), number * 2);
+        //     // This will change the ArrayList numbers to change the index reached value by
+        //     // multiplying it for two
+        // });
 
+        // System.out.println("After " + numbers.toString());
+
+        // System.out.println(numbers.isEmpty());
+
+        // System.out.println(numbers.contains(Integer.valueOf(5)));
+        // System.err.println(numbers.containsAll(numbers)); true
+
+        // System.err.println(numbers.size()); //numbers.size() is used to return the
+        // tootal numberr of the elements in the array list
+        // numbers.sort(Comparator.reverseOrder()); //This return the arraylist of the
+        // numbersin the reverse order or the decreasing order
+        // numbers.sort(Comparator.naturalOrder()); //naturalOrder is the method of
+        // comparator here we are saying arrange the following n their natural order
+        // arranging thing int he natural or increaing order
+        // System.out.println(numbers.toString());
+
+        // number.set(index, newValue);
+        // numbers.set(2, Integer.valueOf(30));
+        // Integer.valueof(30); this one creates an integer containing the value 30
+        // numbers.set(1, 6876543); //This one is used within an ArrayList to
+        // replace/change a value at a specific index
+        // System.out.println(numbers.get(2));
 
         // numbers.clear(); //this removes all the elments from the array list
         // numbers.remove(Integer.valueOf(1));
@@ -595,6 +623,62 @@ public class HelloWorld {
         // at the specified index;
         // System.out.println(numbers.get(2));
 
+    }
+
+} 
+
+import java.util.HashMap;
+
+public class HelloWorld {
+
+    public static void main(String[] args) {
+
+        // Java, HashMap is a part of the Java Collections Framework that implements the
+        // Map interface. It is a hash table-based implementation of the Map interface.
+        // A HashMap is an associative array that stores key-value pairs, where each key
+        // is unique and maps to a
+
+        // HashMap<String, Integer> examScores = new HashMap<String, Integer>();
+
+        // examScores.put("Math", 100);
+        // examScores.put("physics", 10);
+        // examScores.put("English", 100);
+        // examScores.put("Java", 100);
+        // examScores.put("c++", 100);
+
+        // System.out.println(examScores.containsValue(Integer.valueOf(100)));
+
+        // System.err.println(examScores.containsKey("Math"));
+        // System.err.println(examScores.containsValue(100));
+        // System.out.println(examScores.hashCode());
+
+        // examScores.clear();
+        // examScores.remove("Math"); // this one removes the key named Math
+
+        // System.out.println(examScores.size());
+
+        // System.out.println(examScores.toString());
+        // System.out.println(examScores.get("Heg")); //this retuns null because heg is
+        // not found as the key
+        // System.out.println(examScores.get("physics"));
+        // examScores.replace("Math", 70);
+        // examScores.putIfAbsent("Ge ography", 10); // this add the key as Geography
+        // and
+        // 10 as the marks of Geography
+        // System.out.println(examScores.toString());
+        // System.out.println(examScores.get("English")); //this is that we want the
+        // score of english
+
+
+    }
+}
+*/
+
+public class HelloWorld {
+    public static void main(String[] args) {
+
+        User youngUser = new User(); //creation of the object 
+        
     }
 
 }
