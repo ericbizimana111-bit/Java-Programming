@@ -673,12 +673,18 @@ public class HelloWorld {
     }
 }
 */
+import java.time.LocalDate;
 
 public class HelloWorld {
     public static void main(String[] args) {
 
         User youngUser = new User(); //creation of the object 
-        
+
+        youngUser.name = "Bizimana Eric";
+        youngUser.birthDay = LocalDate.parse("1995-01-31");
+
+        System.out.printf("%s was born in %s",youngUser.name,youngUser.birthDay);
+
     }
 
 }
