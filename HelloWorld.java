@@ -729,13 +729,13 @@ public class HelloWorld {
         User User = new User("Bizimana Eric", "1995-01-31"); // creation of the object using the user class
         // here when new User() happenss teh constructor runs automatically , it is used
         // to give the object it's starting values
-        System.out.printf("%s was born in %s and he is %d years old\n", User.name, User.birthDay.toString(),User.age());
+        System.out.printf("%s was born in %s and he is %d years old\n", User.getName(), User.getBirthDay().toString(),User.age());
 
         Book book = new Book();
         book.title = "carmilla";
         book.author = "King Of The Jungle";
         User.borrow(book);
-        System.out.printf("%s has borrowed these books: %s\n", User.name, User.books.toString());
+        System.out.printf("%s has borrowed these books: %s\n", User.getName(), User.books.toString());
 
 
 
