@@ -684,22 +684,23 @@ public class HelloWorld {
         youngUser.name = "Bizimana Eric";
         youngUser.birthDay = LocalDate.parse("1995-01-31");
 
-        System.out.printf("%s was born in %s and he is %d years old\n", youngUser.name, youngUser.birthDay.toString(),youngUser.age());
-
-
-
+        System.out.printf("%s was born in %s and he is %d years old\n", youngUser.name, youngUser.birthDay.toString(),
+                youngUser.age());
 
         Book book = new Book();
+        
+        // Book blueprint
+        // ↓
+        // new Book()
+        // ↓
+        // book object
 
-        book.title = "carmilla"; 
+        book.title = "carmilla";
         book.author = "King Of The Jungle";
 
         youngUser.borrow(book);
 
-        System.out.printf("%s has borrowed these books: %s\n",youngUser.name,youngUser.books.toString());
-
-
-
+        System.out.printf("%s has borrowed these books: %s\n", youngUser.name, youngUser.books.toString());
 
         User oldUser = new User();
 
@@ -710,17 +711,10 @@ public class HelloWorld {
 
     }
 
+    // ========================= Constructors =========================//
 
-
-
-
-
-
-
-
-
-    //=========================  Constructors =========================//
-
-    //Every single class that we have in java has a special method called constructor 
-    //and it is reponsible for initializing all the propertis with their default values
+    // Every single class that we have in java has a special method called
+    // constructor
+    // and it is reponsible for initializing all the propertis with their default
+    // values
 }
