@@ -673,18 +673,54 @@ public class HelloWorld {
     }
 }
 */
-import java.time.LocalDate;
+import java.time.LocalDate; //LocalDate is also a java collection for date 
 
 public class HelloWorld {
+
     public static void main(String[] args) {
 
-        User youngUser = new User(); //creation of the object 
+        User youngUser = new User(); // creation of the object using the user class
 
         youngUser.name = "Bizimana Eric";
         youngUser.birthDay = LocalDate.parse("1995-01-31");
 
-        System.out.printf("%s was born in %s",youngUser.name,youngUser.birthDay);
+        System.out.printf("%s was born in %s and he is %d years old\n", youngUser.name, youngUser.birthDay.toString(),youngUser.age());
+
+
+
+
+        Book book = new Book();
+
+        book.title = "carmilla"; 
+        book.author = "King Of The Jungle";
+
+        youngUser.borrow(book);
+
+        System.out.printf("%s has borrowed these books: %s\n",youngUser.name,youngUser.books.toString());
+
+
+
+
+        User oldUser = new User();
+
+        oldUser.name = "kim kong un";
+        oldUser.birthDay = LocalDate.parse("1980-07-08");
+
+        System.out.printf("%s was born in %s and he is %d\n", oldUser.name, oldUser.birthDay, oldUser.age());
 
     }
 
+
+
+
+
+
+
+
+
+
+    //=========================  Constructors =========================//
+
+    //Every single class that we have in java has a special method called constructor 
+    //and it is reponsible for initializing all the propertis with their default values
 }
