@@ -719,7 +719,7 @@ public class HelloWorld {
     // values
 }  */
 
-import java.time.LocalDate; //LocalDate is also a java collection for date 
+
 
 // a constructor prepare the new object when it is created
 public class HelloWorld {
@@ -732,10 +732,25 @@ public class HelloWorld {
         System.out.printf("%s was born in %s and he is %d years old\n", User.getName(), User.getBirthDay().toString(),
                 User.age());
 
-        Book book = new Book("carmilla","king fo the jungle");
+        Book book = new Book("carmilla","king fo the jungle",270);
      
         User.borrow(book);
+        
         System.out.printf("%s has borrowed these books: %s\n", User.getName(), User.books.toString());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         // // User oldUser = new User();
 
