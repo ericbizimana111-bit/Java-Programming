@@ -62,6 +62,14 @@ public class User {
         // which is the instance of the class that owns the borrow method.
     }
 
+    public String getName() {
+        return this.name;
+    }
+
+    public String getBirthDay() {
+        return this.birthDay.toString();
+    }
+
     public int age() {
         int age = Period.between(this.birthDay, LocalDate.now()).getYears();
         // for here the value of this would be youngerUser object or older user object
