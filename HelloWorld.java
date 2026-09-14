@@ -203,7 +203,7 @@ public class HelloWorld {
         // System.out.println(name);
 
 
-        String literalString1 = "abc";
+        String literalString1 = "abc";  //
         String literalString2 = "abc";
 
         String objectString1  = new String("xyz");  //when you say new java direclty creates the new object, one string object 
