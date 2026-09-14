@@ -38,20 +38,12 @@
 // //any pulbic method can access them private varibles int eh class we have getter and setters //private varibles can be accessible only in the same class;
 //getter and setters are special method that are used to get and set the values 
 
-
-
-
-
-
-
-
-
-//====================== using the getters to access the private varibles values ================= //4
-
+//====================== using the getters to access the private varibles values in other files not in the same class ================= //4
+// ========================== getting the access to the private varibles in the class that are only accessible in the class in other file ================== //
 public class Student {
-    String firstName;
-    String lastName;
-    String email;
+    private String firstName;
+    private String lastName;
+    private String email;
 
     public Student(String firstName, String lastName, String email) {
         this.firstName = firstName;
@@ -60,5 +52,16 @@ public class Student {
 
     }
 
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
 
 }
