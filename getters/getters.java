@@ -1,4 +1,4 @@
-package getters;
+
 public class getters {
 
     public static void main(String[] args) {

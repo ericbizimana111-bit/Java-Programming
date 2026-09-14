@@ -12,16 +12,34 @@ public class Student {
         this.email = email;
     }
 
-    public String setFirstName() {
-        return this.firstName;
+    // Gettersjava 
+    public String getFirstName() {
+        return this.firstName; //we used this in teh getters to return the firstName belonging to the Student object 
+        //and also  if you write only   firstName it will work they are equiavlen t
     }
 
-    public String setLastName() {
+    public String getLastName() {
         return this.lastName;
     }
 
-    public String setEmail() {
-        return this.email;
+    public String getEmail() {
+        return this.email; 
     }
+
+    // setters
+    public void setFirstName(String firstName) {
+        this.firstName = firstName; 
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    // A setter changes / set a value
+    // A setter shoudl receive a value and assign it
 
 }

@@ -1,3 +1,5 @@
+
+
 public class Student {
 
     private String firstName;
@@ -8,23 +10,18 @@ public class Student {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
-
     }
 
+    // Getters
     public String getFirstName() {
-        return this.firstName;
+        return firstName;
     }
 
     public String getLastName() {
-        return this.lastName;
+        return lastName;
     }
 
     public String getEmail() {
-        return this.email;
+        return email;
     }
-
-    public static void main(String[] args) {
-
-    }
-
 }
