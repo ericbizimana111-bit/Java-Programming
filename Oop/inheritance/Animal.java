@@ -1,12 +1,13 @@
 package Oop.inheritance;
 
 public class Animal {
-    public String eat() {
-        return "Eating....."; // Returns a String
+    public void eat() {
+        System.out.println("Eating.....");
     }
 }
+
 class Dog extends Animal {
-    public String bark() {
-        return "Barking...."; // Returns a String
+    public void bark() {
+        System.out.println("Barking....");
     }
 }

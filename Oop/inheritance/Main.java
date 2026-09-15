@@ -5,7 +5,7 @@ public class Main {
         Animal animal = new Animal();
         Dog dog = new Dog();
 
-        animal.eat();
-        dog.bark();
+        animal.eat();  //calling the function
+        dog.bark();    //calling teh function
     };
 }
