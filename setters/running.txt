@@ -1,0 +1,16 @@
+The way we run the files in the other folder other than the root folder
+
+==  javac setters\Student.java setters\Setters.java //for compiling to get the bytecode compiled
+=== java setters.Setters
+
+
+//    =================javac setters\Student.java setters\Setters.java ========================== //
+
+        you are telling Java:
+        Find Student.java inside the setters folder and compile it.
+        Find Setters.java inside the setters folder and compile it.
+
+
+// ================= java setters\Setters ===========  //
+
+java setters.Setters : means the class named Setters that belongs to the setters package.

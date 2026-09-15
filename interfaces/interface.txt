@@ -1,0 +1,38 @@
+Why this Interface shift is important:Multiple Inheritance:
+ == A class can only inherit from one parent class, but it can implement dozens of interfaces.
+ == Looser Coupling: Your PhoneService is now even more flexible. 
+ 
+ If you build a SmartWatch class that isn't a "Phone" but implements Callable, your PhoneService can run calls on it 
+ without changing a line of code.Would you like to see how we can add a default method inside an interface 
+ (introduced in Java 8) so you don't have to override it in every class, or should we look at how to handle 
+ instance variables since interfaces cannot hold regular object states?
+
+
+List of Java Reserved Keywords to Avoid for Package/Class
+NamesNever name a package, class, or variable any of the following terms:
+
+ interface
+ class
+ package
+ public
+ void
+ static
+ abstract
+
+/// ================== upcasting ================== //
+
+The Real-World AnalogyImagine you have an actual Apple iPhone in your hand.
+If someone asks you: "What is that?"You can say: "It is an iPhone." 
+(Specific)Or you can say: "It is a Phone." (General)When you call it a "Phone," 
+you aren't changing the device itself—it’s still an iPhone—you are just treating it as a general communication tool. 
+That is exactly what upcasting is.
+
+
+// Manually upcasting: You take the Samsung 's' and put it into a 'Callable' variable.
+
+Samsung s = new Samsung();
+Callable device = s; 
+
+
+UPCASTING  is like moving form something that is unique(Samsung) to something that is general common (Phone);
+DOWNCASTING is like movign from something that is general(Phone) to something that is unique(Samsung);
