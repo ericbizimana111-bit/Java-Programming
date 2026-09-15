@@ -1,4 +1,4 @@
-package abstraction;
+package Oop.abstraction;
 
 public class Samsung extends Phone {
 

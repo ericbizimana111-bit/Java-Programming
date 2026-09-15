@@ -1,4 +1,4 @@
-package abstraction;
+package Oop.abstraction;
 
 public abstract class Phone {
     // i want this phone to be abstract
