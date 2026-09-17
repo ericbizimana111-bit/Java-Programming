@@ -1,11 +1,11 @@
-package Oop.polymorphism;
+package Oop.polymorphism.MethodOverloading;
 //Method Overloading = compile-time polymorphism 
 
 //Overloading == means having multiple methods with the same name but different parameters in the same class 
 
 //here the decision is made at the compile time when checking the input and deciding the function to use 
 
-public class MethodOverloading {
+public class Calculator {
 
   int add(int a, int b) {
     return a + b;
