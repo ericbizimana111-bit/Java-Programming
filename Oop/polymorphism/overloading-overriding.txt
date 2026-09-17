@@ -1,0 +1,20 @@
+Don't think:
+"Overloading is compile-time because it is written in the same class."
+That's not the real reason.
+
+// ============ The important reason is =============== //
+
+The compiler can determine which overloaded method to use from the method signature and arguments.
+
+
+
+
+
+
+And don't think:
+"Overriding is runtime because the method is in another class."
+
+
+// ============== The real reason is ==================== //
+
+The actual object that the reference points to determines which overridden implementation runs, and that object can only be known at runtime.
