@@ -1,5 +1,6 @@
 package Oop.polymorphism.MethodOverriding;
 
-public class MethodOverridingMain {
+public class AnimalMain {
   
+
 }
