@@ -1,4 +1,4 @@
-package Oop.inheritance;
+package Oop.inheritance.Single_Inheritance;
 
 public class Animal {
     public void eat() {

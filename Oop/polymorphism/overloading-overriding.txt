@@ -18,3 +18,26 @@ And don't think:
 // ============== The real reason is ==================== //
 
 The actual object that the reference points to determines which overridden implementation runs, and that object can only be known at runtime.
+
+
+
+
+
+
+                 POLYMORPHISM
+                       │
+          ┌────────────┴────────────┐
+          │                         │
+     OVERLOADING               OVERRIDING
+          │                         │
+ Same method name            Same method signature
+ Different parameters        Child changes implementation
+          │                         │
+          ↓                         ↓
+ COMPILE-TIME                 RUNTIME
+ POLYMORPHISM                 POLYMORPHISM
+ 
+
+
+Overloading asks: "Which method matches these parameters?" → compiler decides.
+Overriding asks: "Which object's version of this method should run?" → runtime decides.

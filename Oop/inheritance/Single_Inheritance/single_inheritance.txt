@@ -1,0 +1,1 @@
+1. Single Inheritance === One child class inherits from one parent class.
