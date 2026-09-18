@@ -21,6 +21,8 @@ public class AnimalMain {
 
 
 
+    System.out.println("============For the Animal class==============");
+
     Animal animal = new Animal();
     animal.eat();
 
