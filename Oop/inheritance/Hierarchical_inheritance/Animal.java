@@ -1,4 +1,4 @@
-package Oop.inheritance.Hierarchical_inheritance;
+package Oop.inheritance.hierarchical_inheritance;
 
 public class Animal {
 

@@ -1,5 +1,5 @@
 
-package oop.inheritance.Hierarchical_inheritance;
+package Oop.inheritance.hierarchical_inheritance;
 
 public class AnimalMain {
 
