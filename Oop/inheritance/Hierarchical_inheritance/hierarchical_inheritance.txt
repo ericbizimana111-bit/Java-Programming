@@ -1,0 +1,6 @@
+Hierarchical Inheritance == Multiple child classes inherit from the same parent.
+
+
+       Animal
+       /    \
+     Dog    Cat
