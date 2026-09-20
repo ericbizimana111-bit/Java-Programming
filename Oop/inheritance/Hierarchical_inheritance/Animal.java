@@ -2,20 +2,20 @@ package Oop.inheritance.Hierarchical_inheritance;
 
 public class Animal {
 
-  void eat() {
-    System.out.println("Eating...");
+  String eat() {
+    return "Eating...";
   }
 }
 
 class Dog extends Animal {
-  void bark() {
-    System.out.println("Barking...");
+  String bark() {
+    return "Barking...";
   }
 }
 
 class Cat extends Animal {
-  void meow() {
-    System.out.println("Meowing...");
+  String meow() {
+    return "Meowing...";
   }
 }
 
