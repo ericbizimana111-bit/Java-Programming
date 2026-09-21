@@ -1,0 +1,15 @@
+Hybrid inheritance === a combination of two or more types of inheritance
+
+SINGLE       A → B
+
+MULTILEVEL   A → B → C
+
+HIERARCHICAL       A
+                  / \
+                 B   C
+
+MULTIPLE       A   B
+                \ /
+                 C
+
+HYBRID         combination of different types

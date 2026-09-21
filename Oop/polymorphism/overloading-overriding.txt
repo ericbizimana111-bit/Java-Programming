@@ -41,3 +41,85 @@ The actual object that the reference points to determines which overridden imple
 
 Overloading asks: "Which method matches these parameters?" → compiler decides.
 Overriding asks: "Which object's version of this method should run?" → runtime decides.
+
+
+============ Method Overriding ==========
+
+class Person {
+
+    void eat() {
+        System.out.println("Person is eating");
+    }
+}
+
+class Student extends Person {
+
+    @Override
+    void eat() {
+        System.out.println("Student is eating while studying");
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Person p = new Person();
+        p.eat();
+
+        Student s = new Student();
+        s.eat();
+    }
+}
+
+
+
+
+
+
+======= method overriding =======
+
+Person
+  └── eat()
+
+Student
+  └── eat()
+
+Here, Student inherits from Person, but Student provides its own version of eat().
+
+So:
+
+Person.eat() → parent method
+Student.eat() → overridden method
+Student overrides eat() from Person
+
+This is runtime polymorphism.
+
+
+
+
+======= Real-life example of method overriding (runtime polymorphism) ====
+
+A Person can eat:
+
+Person
+  eat() → "Person is eating"
+
+Now we create a Student, which is a type of Person:
+
+Student
+  eat() → "Student is eating while studying"
+
+The Student inherits the eat() method from Person, but then changes how it works.
+
+So:
+
+Person → eat()
+   ↓
+Student → eat()
+
+The important idea is:
+
+The parent says what the method is, and the child can change how the method works.
+
+That changing of the parent's method is called method overriding.

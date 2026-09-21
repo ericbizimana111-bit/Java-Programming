@@ -1,0 +1,23 @@
+Single Inheritance: A child class inherits from one parent class.
+
+
+Multilevel Inheritance: A class inherits from another class, which itself inherits from another class.
+
+
+Hierarchical Inheritance: Multiple child classes inherit from the same parent class.
+Multiple Inheritance: A child class inherits from more than one parent class.
+
+
+Hybrid Inheritance: A combination of two or more types of inheritance.
+
+
+
+what is the difference btn single and multilevel classes 
+
+==Single inheritance
+
+ A child class directly inherits from one parent class.( There is one inheritance relationship: Animal → Dog.)
+
+==Multilevel inheritance
+
+A class inherits from a class that already inherited from another class.(is when a class gets features from another class, and that class got its features from another class before it. For example: Animal → Mammal → D)
