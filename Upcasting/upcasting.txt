@@ -67,3 +67,63 @@ public class Main {
 Even though both variables are declared as Person, Java looks at the actual object (Student or Teacher) at runtime.
 
 This is upcasting + method overriding + runtime polymorphism.
+
+
+
+
+
+
+class Person {
+
+    void eat() {
+        System.out.println("Person is eating");
+    }
+}
+
+class Student extends Person {
+
+    @Override
+    void eat() {
+        System.out.println("Student is eating");
+    }
+}
+
+class Teacher extends Person {
+
+    @Override
+    void eat() {
+        System.out.println("Teacher is eating");
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        // UPCASTING
+        Person student = new Student();
+        Person teacher = new Teacher();
+
+        // Same method call
+        student.eat();
+        teacher.eat();
+    }
+}
+
+
+The reference is Person, but the actual object is Student.
+
+
+Runtime polymorphism
+Person student = new Student();
+Person teacher = new Teacher();
+
+student.eat();  // Student's eat()
+teacher.eat();  // Teacher's eat()
+
+Easy memory trick:
+
+Upcasting: Child → Parent
+Downcasting: Parent → Child
+Overriding: Child changes the parent's method
+Runtime polymorphism: Same method call, different behavior depending on the actual object.
