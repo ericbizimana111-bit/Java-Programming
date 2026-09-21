@@ -127,3 +127,48 @@ Upcasting: Child → Parent
 Downcasting: Parent → Child
 Overriding: Child changes the parent's method
 Runtime polymorphism: Same method call, different behavior depending on the actual object.
+
+
+
+
+
+
+
+
+3. Downcasting
+
+Now suppose you have:
+
+Person p = new Student();
+
+Java sees p as a Person, but the actual object is a Student.
+
+If you want to treat it as a Student again:
+
+Student s = (Student) p;
+
+This is downcasting.
+
+Think:
+
+Person
+   ↓
+Student
+
+You are going down the inheritance tree.
+
+Now you can use:
+
+s.eat();
+s.study();
+
+
+
+//  ==================  UPCASTING =======================  //
+BCS "Create a Student object, but treat it as a Person."
+
+Person student = new Student();
+Person teacher = new Teacher();
+
+student.eat();
+teacher.eat();
