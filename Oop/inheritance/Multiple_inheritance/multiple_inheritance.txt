@@ -1,0 +1,25 @@
+4. Multiple Inheritance
+
+One child class inherits from multiple parent classes.
+
+    Animal     Vehicle
+       \        /
+        \      /
+         FlyingCar
+
+Conceptually:
+
+A       B
+ \     /
+   \ /
+    C
+
+For example:
+
+Dog inherits Animal
+Dog inherits Pet
+
+Java therefore does not allow multiple inheritance between classes:
+== bcs The problem is that both parents could potentially have methods with the same name.
+
+class C extends A, B { } // ❌ Not allowed,However, Java can achieve a form of multiple inheritance through interfaces.
