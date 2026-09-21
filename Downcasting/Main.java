@@ -22,11 +22,13 @@ public class Main {
   public static void main(String[] args) {
 
     //let me treat p as sutudent now 
-    Person p = new Student();
+    Person p = new Student(); // The actual object is a Student, but we are referring to it as a Person
 
     // Downcasting must be done explicitly
 
-    Student s = (Student) p;
+    Student s = (Student) p; // We convert the Person reference back to a Student.
+
+   // Downcasting requires an explicit cast:(Student) p
 
     s.eat();
     s.study();

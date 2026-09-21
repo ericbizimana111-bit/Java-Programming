@@ -1,0 +1,69 @@
+Exactly — this is upcasting, not downcasting.
+
+Person student = new Student();
+Person teacher = new Teacher();
+
+student.eat();
+teacher.eat();
+Why?
+
+Student and Teacher are child classes of Person:
+
+          Person
+         /      \
+    Student    Teacher
+
+When you write:
+
+Person student = new Student();
+
+you are taking a Student (child) and storing it in a Person (parent) reference.
+
+That's upcasting:
+
+Student → Person
+ Child     Parent
+
+Same here:
+
+Person teacher = new Teacher();
+Teacher → Person
+  Child    Parent
+But why can student.eat() and teacher.eat() behave differently?
+
+If both override eat():
+
+class Person {
+    void eat() {
+        System.out.println("Person eats");
+    }
+}
+
+class Student extends Person {
+    @Override
+    void eat() {
+        System.out.println("Student eats");
+    }
+}
+
+class Teacher extends Person {
+    @Override
+    void eat() {
+        System.out.println("Teacher eats");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Person student = new Student();
+        Person teacher = new Teacher();
+
+        student.eat();  // Student eats
+        teacher.eat();  // Teacher eats
+    }
+}
+
+Even though both variables are declared as Person, Java looks at the actual object (Student or Teacher) at runtime.
+
+This is upcasting + method overriding + runtime polymorphism.
