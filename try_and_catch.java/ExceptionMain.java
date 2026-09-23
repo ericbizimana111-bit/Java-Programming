@@ -7,10 +7,15 @@ public class ExceptionMain {
     int b = 0;
 
     try {
+
       int res = a / b;
+
       System.out.println("result" + res);
-    } catch (Exception e) {
+
+    } catch (ArithmeticException e) {
+
       System.out.println("Arithmetic Exception");
+
     }
 
   }
