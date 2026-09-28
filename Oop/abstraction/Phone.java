@@ -1,5 +1,6 @@
 package Oop.abstraction;
 
+// abstract class is like the partial blue print it does not provide the full information 
 public abstract class Phone {
     // i want this phone to be abstract
     String phoneNumber;
