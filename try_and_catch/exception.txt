@@ -1,0 +1,335 @@
+types of exception in java
+Fast answer
+
+In Java, exceptions are mainly divided into two types: Checked Exceptions and Unchecked Exceptions. There is also the broader Error category under Throwable.
+
+Java Exception Hierarchy
+Throwable
+├── Error
+│   ├── OutOfMemoryError
+│   └── StackOverflowError
+│
+└── Exception
+    ├── Checked Exceptions
+    │   ├── IOException
+    │   ├── SQLException
+    │   └── ClassNotFoundException
+    │
+    └── RuntimeException
+        └── Unchecked Exceptions
+            ├── NullPointerException
+            ├── ArithmeticException
+            ├── ArrayIndexOutOfBoundsException
+            └── NumberFormatException
+
+1. Checked Exceptions are checked by the compiler at compile time. Java requires you to either handle them using try-catch or declare them using throws.
+
+try {
+    FileReader file = new FileReader("data.txt");
+} catch (FileNotFoundException e) {
+    System.out.println("File not found");
+}
+
+Examples include IOException, SQLException, FileNotFoundException, and ClassNotFoundException.
+
+2. Unchecked Exceptions occur at runtime and are subclasses of RuntimeException. The compiler does not require you to handle them.
+
+int a = 10;
+int b = 0;
+
+int result = a / b;  // ArithmeticException
+
+Common examples are ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException, NumberFormatException, and ClassCastException.
+
+3. Errors are serious problems generally caused by the JVM or system environment. Applications normally don't try to recover from them.
+
+// Example:
+StackOverflowError
+OutOfMemoryError
+
+So, for an exam-style answer:
+
+There are two main types of exceptions in Java:
+
+Checked Exception — checked at compile time.
+Unchecked Exception — occurs at runtime and is not checked by the compiler.
+
+Java also has Errors, which are serious JVM/system problems and are not technically exceptions.
+
+Today 10:40 AM
+examples on each 
+
+Sure. Here are simple examples of each type, with the cause clearly shown.
+
+1. Checked Exceptions
+
+These are checked by Java during compilation. You normally need to handle them with try-catch or declare them with throws.
+
+Example: FileNotFoundException
+import java.io.FileReader;
+import java.io.FileNotFoundException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            FileReader file = new FileReader("data.txt");
+        } catch (FileNotFoundException e) {
+            System.out.println("File was not found.");
+        }
+    }
+}
+
+If data.txt doesn't exist, Java throws FileNotFoundException.
+
+Other checked exceptions
+Exception	Example situation
+IOException	Problem reading/writing a file
+SQLException	Problem communicating with a database
+FileNotFoundException	File doesn't exist
+ClassNotFoundException	Java cannot find a required class
+2. Unchecked Exceptions
+
+These happen at runtime. They are subclasses of RuntimeException.
+
+Example: ArithmeticException
+public class Main {
+    public static void main(String[] args) {
+        int x = 10;
+        int y = 0;
+
+        System.out.println(x / y);
+    }
+}
+
+Output:
+
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+
+Java cannot divide a number by zero.
+
+Example: NullPointerException
+public class Main {
+    public static void main(String[] args) {
+        String name = null;
+
+        System.out.println(name.length());
+    }
+}
+
+Here, name doesn't refer to an actual String object, so calling .length() causes:
+
+NullPointerException
+Example: ArrayIndexOutOfBoundsException
+public class Main {
+    public static void main(String[] args) {
+        int[] numbers = {10, 20, 30};
+
+        System.out.println(numbers[5]);
+    }
+}
+
+The array only has indexes:
+
+0 → 10
+1 → 20
+2 → 30
+
+There is no index 5, so Java throws:
+
+ArrayIndexOutOfBoundsException
+Example: NumberFormatException
+public class Main {
+    public static void main(String[] args) {
+        String number = "hello";
+
+        int x = Integer.parseInt(number);
+    }
+}
+
+Java cannot convert "hello" into an integer.
+
+Result:
+
+NumberFormatException
+Other common unchecked exceptions
+Exception	Example situation
+ArithmeticException	Dividing by zero
+NullPointerException	Using an object that is null
+ArrayIndexOutOfBoundsException	Accessing an invalid array index
+NumberFormatException	Converting "abc" to an integer
+ClassCastException	Incorrectly converting one object type to another
+3. Errors
+
+Errors are not technically exceptions. They are serious problems that usually occur inside the JVM or because the system has run out of resources.
+
+Example: StackOverflowError
+
+This can happen when a method calls itself forever:
+
+public class Main {
+
+    static void test() {
+        test();
+    }
+
+    public static void main(String[] args) {
+        test();
+    }
+}
+
+The method keeps calling itself:
+
+test()
+  ↓
+test()
+  ↓
+test()
+  ↓
+test()
+  ↓
+...
+
+Eventually, the stack becomes full:
+
+StackOverflowError
+Example: OutOfMemoryError
+
+This can happen when a program tries to use more memory than the JVM can provide.
+
+public class Main {
+    public static void main(String[] args) {
+        int[] numbers = new int[Integer.MAX_VALUE];
+    }
+}
+
+This may result in:
+
+OutOfMemoryError
+The easiest way to remember
+                    Throwable
+                       │
+          ┌────────────┴────────────┐
+          ↓                         ↓
+       Exception                  Error
+          │
+    ┌─────┴─────┐
+    ↓           ↓
+ Checked     Unchecked
+            (RuntimeException)
+
+Checked: Java says, "You need to deal with this."
+
+Unchecked: The problem usually results from something wrong in the program while it is running.
+
+Error: A serious JVM/system-level problem.
+
+In Java, a custom exception is an exception that you create yourself for a specific situation in your program.
+
+The basic process is:
+
+Create a class.
+Make it extend Exception or RuntimeException.
+Create a constructor.
+Use throw to throw your custom exception.
+1. Create the custom exception
+class AgeException extends Exception {
+
+    public AgeException(String message) {
+        super(message);
+    }
+}
+
+Here:
+
+AgeException → our custom exception name.
+extends Exception → makes it a checked exception.
+super(message) → sends the error message to the parent Exception class.
+2. Use the custom exception
+public class Main {
+
+    static void checkAge(int age) throws AgeException {
+
+        if (age < 18) {
+            throw new AgeException("You must be 18 or older.");
+        }
+
+        System.out.println("You are allowed.");
+    }
+
+    public static void main(String[] args) {
+
+        try {
+            checkAge(15);
+        } catch (AgeException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}
+
+Output:
+
+You must be 18 or older.
+How it works
+
+The flow is:
+
+checkAge(15)
+     ↓
+age < 18?
+     ↓ YES
+throw new AgeException(...)
+     ↓
+catch (AgeException e)
+     ↓
+e.getMessage()
+     ↓
+"You must be 18 or older."
+Custom unchecked exception
+
+If you don't want the compiler to force you to use try-catch or throws, extend RuntimeException instead:
+
+class AgeException extends RuntimeException {
+
+    public AgeException(String message) {
+        super(message);
+    }
+}
+
+Then:
+
+public class Main {
+
+    static void checkAge(int age) {
+
+        if (age < 18) {
+            throw new AgeException("You must be 18 or older.");
+        }
+
+        System.out.println("You are allowed.");
+    }
+
+    public static void main(String[] args) {
+        checkAge(15);
+    }
+}
+Remember this pattern
+
+Checked custom exception:
+
+class MyException extends Exception {
+    public MyException(String message) {
+        super(message);
+    }
+}
+
+Unchecked custom exception:
+
+class MyException extends RuntimeException {
+    public MyException(String message) {
+        super(message);
+    }
+}
+
+The key idea is:
+
+Create → extend → constructor → throw → catch (if needed)
