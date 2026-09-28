@@ -71,6 +71,45 @@ try {
 }
      
 e is a variable that stores the exception object that was caught.
+"If a DoctorNotFoundException happens, catch it and call that exception e."
+
+//The name e is not special. You could call it something else:
+
+catch (DoctorNotFoundException error) {
+    System.out.println(error.getMessage());
+}
+
+catch (DoctorNotFoundException exception) {
+    System.out.println(exception.getMessage());
+}
+
+e.getMessage() means: "Give me the message stored inside this exception."
 
 
-     */
+
+throw
+  ↓
+new DoctorNotFoundException("Doctor was not found")
+  ↓
+exception object is created
+  ↓
+catch (DoctorNotFoundException e)
+  ↓
+e = that exception object
+  ↓
+e.getMessage()
+  ↓
+"Doctor was not found"
+  ↓
+System.out.println(...)
+  ↓
+Doctor was not found
+
+
+e = the caught exception
+getMessage() = the message stored in the exceptio
+
+
+
+
+ */
