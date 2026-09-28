@@ -70,6 +70,7 @@ try {
     System.out.println(e.getMessage());
 }
      
+e is a variable that stores the exception object that was caught.
 
 
      */
