@@ -1,0 +1,41 @@
+modifiers ==== are keywords that control the access, behavior, or properties of classes, methods, variables, and constructors.
+
+/////// Two main types of the modifiers /////////////
+
+1. Access Modifiers
+
+They control who can access something.
+
+Modifier	     Meaning
+
+public	       Can be accessed from anywhere
+
+private        Can only be accessed inside the same class
+
+protected	     restricts the visibility of a class member (like a method or variable) so it can only be accessed within its own  class, other classes in the same package, and child classes (subclasses) even if they are in different packages
+
+(default)	     Accessible only within the same package
+
+
+// first file of java
+public class Student {
+
+    public String name;
+    private int age;
+    protected String school;
+    String country; // default
+}
+
+For example:
+
+//main file of java
+
+Student s = new Student();
+
+s.name = "Eric";  // ✅ public
+s.age = 20;       // ❌ private
+
+
+2. Non-Access Modifiers
+
+These don't mainly control who can access something. They change how it behaves
