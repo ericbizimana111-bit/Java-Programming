@@ -17,23 +17,24 @@
 
 // }
 
-package Generics;
-//class Box<T> extends Number  this one is bounded strings are not allowed
-class Box<T> {
+// package Generics;
+// //class Box<T> extends Number  this one is bounded strings are not allowed
+// //("//kuburizamo strings ariko ibindi byose bigakora ")
+// class Box<T> {
 
-  T value;
+//   T value;
 
-  public Box(T value) {
-    this.value = value;
-  }
+//   public Box(T value) {
+//     this.value = value;
+//   }
 
-  public static void main(String[] args) {
+//   public static void main(String[] args) {
 
-    Box<String> stringValue = new Box<>("kaline");
-    System.out.println(stringValue.value);
+//     Box<String> stringValue = new Box<>("kaline");
+//     System.out.println(stringValue.value);
 
-  }
+//   }
 
-}
+// }
 
-//kuburizamo strings ariko ibindi byose bigakora 
+
