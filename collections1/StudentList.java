@@ -27,3 +27,6 @@ public class StudentList {
     }
   }
 }
+
+
+//give the power to the student of sorting
