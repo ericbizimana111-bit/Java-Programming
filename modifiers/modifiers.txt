@@ -2,7 +2,7 @@ modifiers ==== are keywords that control the access, behavior, or properties of 
 
 /////// Two main types of the modifiers /////////////
 
-1. Access Modifiers
+1.ACCESS MODIFIERS
 
 They control who can access something.
 
@@ -39,3 +39,37 @@ s.age = 20;       // ❌ private
 2. Non-Access Modifiers
 
 These don't mainly control who can access something. They change how it behaves
+
+
+2. NON ACCESS MODIFIERS 
+
+static
+Belongs to the class rather than an object
+
+final
+Cannot be changed/overridden/inherited depending on where used
+
+abstract
+Declares something incomplete that must be implemented
+
+synchronized
+Controls access to a method/block by multiple threads
+
+
+
+synchronized                  nonsynchronized 
+--------------                -----------------
+multiple threads               singlethreaded
+slower                         faster
+
+volatile	
+Ensures a variable's value is read from shared memory
+
+transient	
+Prevents a field from normal serialization
+
+native	
+Method is implemented in non-Java code
+
+strictfp	
+Controls floating-point calculations (largely obsolete in modern Java)
