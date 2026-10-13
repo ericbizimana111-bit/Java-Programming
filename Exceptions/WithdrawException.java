@@ -1,4 +1,4 @@
-package try_and_catch;
+package Exceptions;
 
 //runtime exception
 //super call the constructor exception  constructor formthe object class form the exception class 

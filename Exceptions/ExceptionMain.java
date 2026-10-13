@@ -1,4 +1,4 @@
-package try_and_catch;
+package Exceptions;
 
 public class ExceptionMain {
 
@@ -19,7 +19,7 @@ public class ExceptionMain {
 
     } catch (ArithmeticException e) {
 
-      System.out.println(e);
+      System.out.println(e.getMessage());
 
     }
 

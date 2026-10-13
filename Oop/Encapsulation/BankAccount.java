@@ -9,6 +9,7 @@ public class BankAccount {
 
     // the controlled way to modify the data
     public void deposit(double amount) {
+        
         if (amount > 0) {
             balance = balance + amount;
         }
@@ -48,3 +49,7 @@ public class BankAccount {
  * outside code uses
  * the public interface
  */
+
+
+// upcating is implicit casting 
+// downcating is explicit casting
