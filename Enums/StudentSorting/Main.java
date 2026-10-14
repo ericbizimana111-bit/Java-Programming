@@ -145,16 +145,25 @@ public class Main {
 
 
       The first command compiles all three files. The second runs the Main class.
+
+
       7. Key differences to remember
+
       Feature	Purpose in this exercise
+
       Comparable<Student>	Defines the natural ordering by ID
-      compareTo()	Compares two students by ID
-      Comparator<Student>	Defines another ordering by grade
+      compareTo()	  Compares two students by ID
+      Comparator<Student>	      Defines another ordering by grade
       compare()	Compares two students by grade
       equals()	Checks equality using ID and last name
       hashCode()	Generates a hash code using ID and last name
       Collections.sort(list)	Uses the natural ordering
       Collections.sort(list, comparator)	Uses the specified comparator
+
+
+
+
+      
       Important exam point: Comparable is implemented inside the class being sorted, whereas Comparator lets you define a separate sorting strategy without changing that class's natural ordering.
       One subtle point: compareTo() compares only IDs, while equals() compares IDs and last names. Therefore, two students with the same ID but different last names compare as 0 using compareTo() even though equals() returns false. That is allowed, although it is worth understanding when using sorted sets or sorted maps.
 
