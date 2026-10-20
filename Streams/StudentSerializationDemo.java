@@ -6,9 +6,6 @@ import java.io.ObjectInputStream;
 import java.io.IOException;
 import java.io.Serializable;
 
-
-
-
 class Student implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -27,30 +24,24 @@ class Student implements Serializable {
     }
 }
 
-
-
-
-
-
-
 public class StudentSerializationDemo {
 
     public static void main(String[] args) {
 
-        // Step 1: Create an object  //creating a student object in the memory 
-        //at this state the object is in the memory and not saved to the file 
+        // Step 1: Create an object //creating a student object in the memory
+        // at this state the object is in the memory and not saved to the file
         Student student = new Student("Eric", 22);
 
         // Step 2: Serialize the object and save it
-        try (ObjectOutputStream output =
-                 new ObjectOutputStream(
+        try (ObjectOutputStream output = new ObjectOutputStream(
 
-                    //create the output stream
-                    //THis opens a file for writing bystes, if hte file does not exist, Java normally 
-                    //create it, If it already exists , its contens area overwritten. 
-                     new FileOutputStream("student.dat"))) {
+                // create the output stream
+                // THis opens a file for writing bystes, if hte file does not exist, Java
+                // normally
+                // create it, If it already exists , its contens area overwritten.
+                new FileOutputStream("student.dat"))) {
 
-            output.writeObject(student);
+            
 
             System.out.println("Student saved successfully.");
 
@@ -60,12 +51,10 @@ public class StudentSerializationDemo {
         }
 
         // Step 3: Deserialize the object
-        try (ObjectInputStream input =
-                 new ObjectInputStream(
-                     new FileInputStream("student.dat"))) {
+        try (ObjectInputStream input = new ObjectInputStream(
+                new FileInputStream("student.dat"))) {
 
-            Student restoredStudent =
-                    (Student) input.readObject();
+            Student restoredStudent = (Student) input.readObject();
 
             System.out.println("\nStudent restored:");
             restoredStudent.display();
