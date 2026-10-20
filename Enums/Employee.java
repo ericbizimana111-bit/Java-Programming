@@ -6,21 +6,10 @@ public class Employee {
 
   int id;
   String name;
-
-
-
-
-
-
-
+  
 public boolean equal (Object obj){
-
   Employee o
 }
-
-
-
-
   public static void main(String[] args) {
     
     Employee e1 = new Employee();
@@ -31,6 +20,7 @@ public boolean equal (Object obj){
     e2.id = 1;
     e2.name = "BRuce";
 
+   
 
     System.out.println((e1.equals(e2)));
     String name1 = new String("Aline");

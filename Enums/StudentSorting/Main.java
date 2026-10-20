@@ -10,6 +10,7 @@ public class Main {
   public static void main(String[] args) {
 
     // Create Student objects
+    
     Student s1 = new Student(103, "Alice", "Mugisha", 85.5);
     Student s2 = new Student(101, "Bob", "Niyonzima", 92.0);
     Student s3 = new Student(104, "Carol", "Uwase", 78.0);
