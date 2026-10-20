@@ -41,7 +41,7 @@ public class StudentSerializationDemo {
                 // create it, If it already exists , its contens area overwritten.
                 new FileOutputStream("student.dat"))) {
 
-            
+            output.writeObject(student);
 
             System.out.println("Student saved successfully.");
 
