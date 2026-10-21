@@ -1,0 +1,30 @@
+5. Now, how can we actually cause ClassNotFoundException?
+This is the central part of your exam question.
+
+In our previous example, the Student class is available because it is declared in the same source file. Java can load it, so deserialization succeeds.
+
+To understand the exception, imagine a different situation.
+
+Program A: Saving
+
+The Student class exists. Java serializes the object and saves it to student.dat.
+
+
+
+
+The file is moved
+
+The file contains the serialized representation and class-identification information, but it is not a replacement for the compiled class.
+
+
+
+
+Program B: Reading
+
+The program tries to restore the student, but the required Student class is missing from the classes available to its class loader. Deserialization fails.
+
+
+
+There is one important detail: you cannot reliably reproduce this exception merely by deleting a .java source file if the compiled .class file is still available. Java runs compiled classes, not source files by default.
+
+To demonstrate the error properly, we can use two separate programs and remove the required class from the reader's runtime classpath.

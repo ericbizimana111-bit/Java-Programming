@@ -6,6 +6,7 @@ import java.io.ObjectInputStream;
 import java.io.IOException;
 import java.io.Serializable;
 
+//By here a class is available 
 class Student implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -52,6 +53,8 @@ public class StudentSerializationDemo {
 
         // Step 3: Deserialize the object
         try (ObjectInputStream input = new ObjectInputStream(
+             
+                //
                 new FileInputStream("student.dat"))) {
 
             Student restoredStudent = (Student) input.readObject();
