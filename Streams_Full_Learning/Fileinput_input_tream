@@ -6,7 +6,14 @@ public class Main{
     public static void main(String[] args){
 
         //Th
-        try(fileInputStream input = FileInputStream(''))
+        try(fileInputStream input = FileInputStream('data.bin')){
+            int data;
+            int value = input.read();
+            System.out.println("Value read from the file: "+ value);
+        }
+        catch(IOException e){
+            System.out.println("Error: " + e.getMessage());
+        }
 
     }
 }
