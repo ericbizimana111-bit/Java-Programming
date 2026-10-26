@@ -1,0 +1,56 @@
+A stream is aflow of data btn a source and a destination
+
+In Java, I/O means Input/Output:
+- Input means receiving or reading data.
+- Output means sending or writing data.
+
+For example, imagine that you have a text file called student.txt containing:
+        Name: Eric
+        Course: Software Engineering
+        Age: 22
+
+
+If your Java program wants to read this information, the data flows from the file into the program.
+
+    Reading a file (Input)
+
+        student.txt // this is the source of data 
+     
+        Input stream // for reading and receiving data
+
+        Java program // Recevies and process that data
+
+Now imagine that your java prograam wants to save informatikon to another file, so the data flows out of the progrma and into the file 
+
+          Writing a file (Output)
+
+                Java program //  Produces the data
+
+                Output stream  // this writes that data 
+
+                 output.txt //Destination for the data
+
+
+////   Why does Java use I/O streams? ///
+
+== to interact with different data sources and destinations
+== Read data from files.
+== Write data to files.
+== Receive input from the keyboard.
+== Display the output on the console 
+== Exchange data with network connections 
+== Process data efficientluy without necessarily loading an entire file into the memory 
+
+Notes : reading a large file one character at a time or in manageable blocks can be more practical than loading the entire file into memory.
+
+ex ; Suppose student.txt contains:
+Hello Java
+
+new FileReader("student.txt") ===  This opens the file for character-based reading.
+int data === The variable stores the next character's numerical value, or -1 when the end of the stream is reached.
+while 
+
+((data = reader.read()) != -1) === This repeatedly reads a character until there is no more data.
+System.out.print((char) data)  === The value is converted to a character and printed.
+
+Important: read() returns an int, not a char, because it needs to represent every possible character value as well as the special end-of-stream value -1.
