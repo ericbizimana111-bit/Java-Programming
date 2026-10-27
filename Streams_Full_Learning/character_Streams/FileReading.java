@@ -1,4 +1,4 @@
-package Streams_Full_Learning;
+package Streams_Full_Learning.character_Streams;
 
 import java.io.IOException;
 import java.io.FileReader;
@@ -23,3 +23,6 @@ public class FileReading {
 }
 
 //if data.txt starts with Hello The program prints H
+//Here read returns integer representing the first decoded character. casting it to char let us display the character
+
+

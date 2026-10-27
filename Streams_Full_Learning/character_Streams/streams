@@ -1,5 +1,11 @@
 A stream is aflow of data btn a source and a destination
 
+A character stream is not simply a byte stream that reads one byte at a time.
+Text encodings can use multiple bytes to represent one character. 
+Character streams handle the conversion between encoded bytes and Java characters.
+
+
+
 In Java, I/O means Input/Output:
 - Input means receiving or reading data.
 - Output means sending or writing data.
@@ -54,3 +60,16 @@ while
 System.out.print((char) data)  === The value is converted to a character and printed.
 
 Important: read() returns an int, not a char, because it needs to represent every possible character value as well as the special end-of-stream value -1.
+
+
+
+
+A character stream is not simply a byte stream that reads one byte at a time. 
+Text encodings can use multiple bytes to represent one character.
+Character streams handle the conversion between encoded bytes and Java characters.
+
+
+Copying an image = use FIleInputStream and FileOutputStream because you need to preserver original bytes
+copying a textfile = use FileReader and FileWriter or a buffered character based approach, because you are processing a text 
+
+
