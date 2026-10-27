@@ -7,7 +7,7 @@ public class FileReading {
 
     public static void main(String[] args){
 
-    try(FileReader reader = new FileReader("data.txt")){
+    try(FileReader reader = new FileReader("./Streams_Full_Learning/data.txt")){
         //FileReader reads one character at a time and returns the integer value of the character read. If the end of the end of the file is reached, it returns -1;
         int character = reader.read();
         if(character != -1){
@@ -18,5 +18,8 @@ public class FileReading {
         System.out.println("Error:"+ e.getMessage());
     }
     
+
 }
 }
+
+//if data.txt starts with Hello The program prints H
