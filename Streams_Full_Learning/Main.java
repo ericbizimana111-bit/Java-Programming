@@ -16,3 +16,5 @@ public class Main {
         
     }
 }
+
+//suppose the first byte in data.bin has the decimal value 65 . The program prints  65 
